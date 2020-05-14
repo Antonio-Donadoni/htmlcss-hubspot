@@ -4,3 +4,73 @@
   margin: 0;
   box-sizing: border-box;
 }
+
+.general-padding{
+  padding: 0 5%;
+}
+/* CSS GRIGLIA */
+#cards-section .row:last-child::after, #numbers-section .row:last-child::after, #columns-footer.row:last-child::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column30 {
+  float: left;
+  width: 30%;
+  /* debug */
+  height: 300px;
+  background-color: blue;
+
+}
+
+.column25{
+  float: left;
+  width: 25%;
+  /* debug */
+  height: 150px;
+  background-color: lightblue;
+  border: solid 1px black;
+}
+
+.center5{
+  margin: 0 5%;
+}
+
+
+/* CSS HEADER */
+
+nav {
+  height: 80px;
+  border: solid 1px black;
+  background-color: #ccc;
+}
+.jumbo {
+  height: 320px;
+  background-color: azure;
+}
+
+/* CSS MAIN */
+.row{
+  height: 300px;
+  border: solid 1px black;
+}
+
+#cards-section {
+  background-color: purple;
+}
+#numbers-section {
+  background-color: red;
+}
+#customers-section {
+  background-color: brown;
+}
+
+
+
+/* CSS FOOTER */
+
+footer {
+  background-color: darkblue;
+  height:600px;
+}
