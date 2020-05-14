@@ -8,6 +8,28 @@
 .general-padding{
   padding: 0 20%;
 }
+
+.button {
+  background-color: #ff7a59;
+  color: #fff;
+  padding: 15px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+}
+
+#login{
+background-color: #fff ;
+color: #ff7a59;
+border: solid 1px #ff7a59;
+padding: 15px 20px;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 500;
+margin-left: 20px;
+}
+
 /* CSS GRIGLIA */
 #cards-section .row:last-child::after, #numbers-section .row:last-child::after, #columns-footer.row:last-child::after {
   content: "";
@@ -46,9 +68,6 @@ nav {
     line-height: 80px;
     text-decoration: none;
   border: solid 1px black;
-  /* background-color: #ccc; */
-
-
 }
 nav a {
   text-decoration: none;
@@ -64,17 +83,22 @@ nav a {
     float: left;
   }
 
-#nav-fixed {
-  background-color: #f5f8fa;
-  /* position: fixed; */
-}
-
 .nav-right {
     float: right;
   }
-  .nav-right div {
-    display: inline-block;
-  }
+
+
+.fa-search {
+  color: #00a4bd;
+}
+
+#nav-fixed {
+  background-color: #f5f8fa;
+  /* position: fixed; */
+  font-size: 16px;
+  font-weight: 500;
+}
+
 
 #main-nav {
   /* margin-top: 80px; */
@@ -86,14 +110,43 @@ nav a {
   padding-top: 25px;
 }
 
+/* CSS JUMBO */
 .jumbo {
+
+  position: relative;
   height: 800px;
   background-color: azure;
   background-image: url("../img/jumbotron.png");
   background-position: bottom right;
   background-repeat: no-repeat;
   background-size: cover;
+  color: #33475b;
+}
+.jumbo-content {
+  width: 35%;
+  padding-top: 60px;
+}
+.jumbo-content h1 {
+  font-size: 46px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
 
+.jumbo-content p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 29px;
+}
+.jumbo-content .button {
+  display: inline block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 0;
+  line-height: 29px;
+  text-decoration: none;
+  padding: 21px 34px;
 }
 
 /* CSS MAIN */
