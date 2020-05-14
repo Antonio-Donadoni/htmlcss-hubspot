@@ -6,7 +6,7 @@
 }
 
 .general-padding{
-  padding: 0 5%;
+  padding: 0 20%;
 }
 /* CSS GRIGLIA */
 #cards-section .row:last-child::after, #numbers-section .row:last-child::after, #columns-footer.row:last-child::after {
@@ -41,13 +41,59 @@
 /* CSS HEADER */
 
 nav {
-  height: 80px;
+  width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
   border: solid 1px black;
-  background-color: #ccc;
+  /* background-color: #ccc; */
+
+
 }
+nav a {
+  text-decoration: none;
+  padding: 20px 15px;
+  color: #33475b
+}
+  nav ul{
+    float: left;
+    list-style-type: none;
+    overflow: hidden;
+  }
+  nav li {
+    float: left;
+  }
+
+#nav-fixed {
+  background-color: #f5f8fa;
+  /* position: fixed; */
+}
+
+.nav-right {
+    float: right;
+  }
+  .nav-right div {
+    display: inline-block;
+  }
+
+#main-nav {
+  /* margin-top: 80px; */
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#main-nav img {
+  padding-top: 25px;
+}
+
 .jumbo {
-  height: 320px;
+  height: 800px;
   background-color: azure;
+  background-image: url("../img/jumbotron.png");
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: cover;
+
 }
 
 /* CSS MAIN */
