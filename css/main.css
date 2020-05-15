@@ -66,6 +66,7 @@ p {
 padding-bottom: 30px;
 font-size: 18px;
 font-weight: 400;
+line-height: 29px;
 
 }
 h2{
@@ -74,8 +75,13 @@ h2{
   padding-bottom: 15px;
 }
 
+.small {
+  font-size: 80%;
+  line-height: 21px;
+}
+
 /* CSS GRIGLIA */
-.subsection-3cards::after, .subsection-numbers-grid::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after, #credits-footer::after  {
+.subsection-3cards::after, .subsection-numbers-grid::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after, #credits-footer::after, .subsection-crm::after  {
   content: "";
   display: table;
   clear: both;
@@ -125,7 +131,6 @@ nav {
   height: 80px;
   line-height: 80px;
   text-decoration: none;
-  border: solid 1px black;
 }
 
 nav a {
@@ -142,7 +147,7 @@ nav ul{
 
   nav li {
     float: left;
-    padding-right: 15px;
+    padding-right: 35px;
   }
 
   .nav-left {
@@ -166,13 +171,9 @@ nav ul{
   z-index: 99;
   font-size: 16px;
   font-weight: 500;
+  border-bottom: 1px solid #33475b;
 }
 
-/* #nav-fixed ul li:first-of-type{
-  padding-right: 10px;
-
-
-} */
 #main-nav {
   margin-top: 80px;
   font-size: 18px;
@@ -205,14 +206,12 @@ nav ul{
 }
 
 .jumbo-content p {
-  font-size: 18px;
-  font-weight: 400;
   margin-top: 20px;
   margin-bottom: 20px;
-  line-height: 29px;
+
 }
 .jumbo-content .button {
-  display: inline block;
+  display: inline-block;
   font-size: 17px;
   font-weight: 600;
   margin-left: 0;
@@ -222,10 +221,6 @@ nav ul{
 }
 
 /* CSS MAIN */
-.row{
-  /* height: 500px; */
-  /* border: solid 1px black; */
-}
 
 /* CSS CARD SECTION */
 #cards-section {
@@ -242,9 +237,10 @@ nav ul{
 }
 
 .subsection-crm {
-  height: 300px;
   margin-bottom: 30px;
   background-color: #fff;
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
 }
 
 .subsection-3cards {
@@ -253,6 +249,11 @@ nav ul{
 .card-container {
   padding: 10% 15%;
 }
+.subsection-3cards .card-container {
+  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
 
 .card-container img{
   margin-bottom: 15px;
@@ -335,6 +336,7 @@ padding: 30px;
 
 #woman {
   width: 50%;
+  padding-bottom: 20px;
 }
 
 /* CSS FOOTER */
@@ -356,7 +358,9 @@ footer a{
   color: rgba(255, 255, 255, 0.6);
 }
 
-
+footer a:hover{
+  color: #7FA9DE;
+}
 
 #support {
   display: inline-block;
@@ -375,8 +379,8 @@ footer a{
 
   text-align: center;
   border-bottom: 1px solid #dadee0;
-
 }
+
 #languages-footer li, #credits-footer li, #social-list li {
   display: inline-block;
   padding-right: 30px;
@@ -388,7 +392,6 @@ footer a{
 #credits-footer img {
   padding-top: 20px;
 }
-
-footer a:hover{
-  color: #7FA9DE;
+#credits-footer {
+  padding-bottom: 50px;
 }
