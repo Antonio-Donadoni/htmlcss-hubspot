@@ -12,6 +12,10 @@ body {
   padding: 0 20%;
 }
 
+.more-padding {
+  padding: 0 10%;
+}
+
 .button {
   background-color: #ff7a59;
   color: #fff;
@@ -49,9 +53,14 @@ font-size: 18px;
 font-weight: 400;
 
 }
+h2{
+  font-size: 45px;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
 
 /* CSS GRIGLIA */
-#cards-section .row:last-child::after, #numbers-section .row:last-child::after, #columns-footer.row:last-child::after, .sub-section::after {
+.subsection-3cards::after, .subsection-numbers-grid::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after  {
   content: "";
   display: table;
   clear: both;
@@ -60,8 +69,6 @@ font-weight: 400;
 .column30 {
   float: left;
   width: 30%;
-  /* debug */
-  /* height: 300px; */
   background-color: #fff;
   text-align: center;
 }
@@ -69,19 +76,25 @@ font-weight: 400;
 .column25{
   float: left;
   width: 25%;
-  /* debug */
-  height: 150px;
-  background-color: lightblue;
-  border: solid 1px black;
+}
+
+.column40{
+  float: left;
+  width: 40%;
+  padding-top: 30px;
+}
+
+.column60{
+  float: left;
+  width: 60%;
+  text-align: center;
+  padding-top: 30px;
 }
 
 .column70{
   float: left;
   width: 70%;
-  /* debug */
-  height: 300px;
-  background-color: #fff;
-  border: solid 1px black;
+  padding-top: 30px;
 }
 
 
@@ -190,8 +203,8 @@ nav ul{
 
 /* CSS MAIN */
 .row{
-  height: 500px;
-  border: solid 1px black;
+  /* height: 500px; */
+  /* border: solid 1px black; */
 }
 
 /* CSS CARD SECTION */
@@ -208,11 +221,18 @@ nav ul{
   width: 25%;
 }
 
-.card-container {
-  padding: 10% 15%;
-
+.subsection-crm {
+  height: 300px;
+  margin-bottom: 30px;
+  background-color: #fff;
 }
 
+.subsection-3cards {
+  padding-bottom: 30px;
+}
+.card-container {
+  padding: 10% 15%;
+}
 
 .card-container img{
   margin-bottom: 15px;
@@ -245,18 +265,56 @@ nav ul{
 
 /* CSS NUMBERS */
 #numbers-section {
-  background-color: red;
+  background: rgb(0,167,186);
+  background: linear-gradient(45deg, rgba(0,167,186,1) 35%, rgba(0,188,166,1) 100%);
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
-#customers-section {
-  background-color: brown;
+.clm25-wrapper{
+padding: 30px;
+}
+.subsection-numbers-grid p{
+  padding-bottom: 0;
+}
+.brd-white-bottom {
+  border-bottom: solid 1px #fff;
+}
+.brd-white-right {
+  border-right: solid 1px #fff;
 }
 
 
+/* CSS CUSTOMER SECTION */
+#customers-section{
+  color:  #33475b;
+}
+
+
+#customers-section p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+}
+
+#customers-section .button {
+  display: inline block;
+  font-size: 17px;
+  font-weight: 600;
+  margin-left: 0;
+  padding: 21px 34px;
+}
+
+
+#woman {
+  width: 50%;
+}
 
 /* CSS FOOTER */
 
 footer {
-  background-color: darkblue;
+  background-color: #32495b;
   height:600px;
 }
