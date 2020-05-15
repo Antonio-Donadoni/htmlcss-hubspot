@@ -47,6 +47,11 @@ h3 {
   font-weight: 600;
 }
 
+h4 {
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+
 p {
 padding-bottom: 30px;
 font-size: 18px;
@@ -120,7 +125,7 @@ nav a {
 }
 
 nav ul{
-    float: left;
+    /* float: left; */
     list-style-type: none;
     overflow: hidden;
   }
@@ -128,6 +133,11 @@ nav ul{
   nav li {
     float: left;
     padding-right: 15px;
+  }
+
+  .nav-left {
+    float: left;
+
   }
 
 .nav-right {
@@ -300,11 +310,12 @@ padding: 30px;
 }
 
 #customers-section .button {
-  display: inline block;
+  display: inline-block;
   font-size: 17px;
   font-weight: 600;
   margin-left: 0;
   padding: 21px 34px;
+  margin-bottom: 30px;
 }
 #customer-grid img{
   width: 110px;
@@ -322,4 +333,48 @@ footer {
   background-color: #32495b;
   height:600px;
   color: #fff;
+  font-weight: bold;
+}
+footer ul {
+list-style-type: none;
+}
+footer li {
+  padding-bottom: 20px;
+}
+
+footer a{
+  color: rgba(255, 255, 255, 0.6);
+}
+
+footer i {
+  padding-right: 20px;
+  font-size: 120%;
+}
+
+#support {
+  display: inline-block;
+  margin-left: 0;
+  background-color: #dadee0;
+  color: #32495b;
+  /* margin-top: 30px; */
+}
+#columns-footer {
+  padding-top: 30px;
+}
+#languages-footer {
+
+  text-align: center;
+  border-bottom: 1px solid #dadee0;
+
+}
+#languages-footer li, #credits-footer li {
+  display: inline-block;
+  padding-right: 30px;
+  font-size: 120%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+#credits-footer img {
+  padding-top: 20px;
 }
