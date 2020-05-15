@@ -26,6 +26,11 @@ body {
   margin-left: 20px;
 }
 
+.button:hover{
+  background-color: rgba(255, 122, 89,0.5);
+
+}
+
 #login{
 background-color: #fff ;
 color: #ff7a59;
@@ -35,6 +40,11 @@ border-radius: 5px;
 font-size: 14px;
 font-weight: 500;
 margin-left: 20px;
+}
+
+#login:hover {
+  background-color: rgba(255, 122, 89,0.1);
+
 }
 
 a{
@@ -65,7 +75,7 @@ h2{
 }
 
 /* CSS GRIGLIA */
-.subsection-3cards::after, .subsection-numbers-grid::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after  {
+.subsection-3cards::after, .subsection-numbers-grid::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after, #credits-footer::after  {
   content: "";
   display: table;
   clear: both;
@@ -331,7 +341,7 @@ padding: 30px;
 
 footer {
   background-color: #32495b;
-  height:600px;
+  /* height:600px; */
   color: #fff;
   font-weight: bold;
 }
@@ -346,10 +356,7 @@ footer a{
   color: rgba(255, 255, 255, 0.6);
 }
 
-footer i {
-  padding-right: 20px;
-  font-size: 120%;
-}
+
 
 #support {
   display: inline-block;
@@ -357,6 +364,9 @@ footer i {
   background-color: #dadee0;
   color: #32495b;
   /* margin-top: 30px; */
+}
+#support:hover{
+  background-color: #7FA9DE;
 }
 #columns-footer {
   padding-top: 30px;
@@ -367,14 +377,18 @@ footer i {
   border-bottom: 1px solid #dadee0;
 
 }
-#languages-footer li, #credits-footer li {
+#languages-footer li, #credits-footer li, #social-list li {
   display: inline-block;
   padding-right: 30px;
   font-size: 120%;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 #credits-footer img {
   padding-top: 20px;
+}
+
+footer a:hover{
+  color: #7FA9DE;
 }
