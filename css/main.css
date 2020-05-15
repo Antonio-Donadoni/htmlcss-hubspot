@@ -306,6 +306,10 @@ padding: 30px;
   margin-left: 0;
   padding: 21px 34px;
 }
+#customer-grid img{
+  width: 110px;
+
+}
 
 
 #woman {
@@ -317,4 +321,5 @@ padding: 30px;
 footer {
   background-color: #32495b;
   height:600px;
+  color: #fff;
 }
