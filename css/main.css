@@ -8,6 +8,7 @@
 body {
   font-family: 'IBM Plex Sans', sans-serif;
 }
+
 .general-padding{
   padding: 0 20%;
 }
@@ -16,36 +17,6 @@ body {
   padding: 0 10%;
 }
 
-.button {
-  background-color: #ff7a59;
-  color: #fff;
-  padding: 15px 12px;
-  border-radius: 5px;
-  font-size: 14px;
-  font-weight: 500;
-  margin-left: 20px;
-}
-
-.button:hover{
-  background-color: rgba(255, 122, 89,0.5);
-
-}
-
-#login{
-background-color: #fff ;
-color: #ff7a59;
-border: solid 1px #ff7a59;
-padding: 15px 20px;
-border-radius: 5px;
-font-size: 14px;
-font-weight: 500;
-margin-left: 20px;
-}
-
-#login:hover {
-  background-color: rgba(255, 122, 89,0.1);
-
-}
 
 a{
   text-decoration: none;
@@ -80,8 +51,41 @@ h2{
   line-height: 21px;
 }
 
+/* CSS BUTTON */
+.button {
+  background-color: #ff7a59;
+  color: #fff;
+  padding: 15px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 20px;
+  transition: all 0.5s;
+}
+
+.button:hover{
+  background-color: rgba(255, 122, 89,0.5);
+
+}
+
+#login{
+background-color: #fff ;
+color: #ff7a59;
+border: solid 1px #ff7a59;
+padding: 15px 20px;
+border-radius: 5px;
+font-size: 14px;
+font-weight: 500;
+margin-left: 20px;
+transition: all 0.5s;
+}
+
+#login:hover {
+  background-color: rgba(255, 122, 89,0.1);
+}
+
 /* CSS GRIGLIA */
-.subsection-3cards::after, .subsection-numbers-grid::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after, #credits-footer::after, .subsection-crm::after  {
+.subsection-3cards::after, #columns-footer .row:last-child::after, .sub-section::after, #customers-section .row::after, #credits-footer::after, .subsection-crm::after, .numbers-row::after  {
   content: "";
   display: table;
   clear: both;
@@ -118,238 +122,246 @@ h2{
   padding-top: 30px;
 }
 
-
 .center5{
   margin: 0 5%;
 }
 
 
 /* CSS HEADER */
-
-nav {
-  width: 100%;
-  height: 80px;
-  line-height: 80px;
-  text-decoration: none;
-}
-
-nav a {
-  text-decoration: none;
-  padding: 20px 0px;
-  color: #33475b;
-}
-
-nav ul{
-    /* float: left; */
-    list-style-type: none;
-    overflow: hidden;
+  /* CSS NAVBAR */
+  nav {
+    width: 100%;
+    height: 80px;
+    line-height: 80px;
+    text-decoration: none;
   }
 
-  nav li {
-    float: left;
+  nav a {
+    text-decoration: none;
+    padding: 20px 0px;
+    color: #33475b;
+  }
+
+  nav ul{
+      list-style-type: none;
+      overflow: hidden;
+    }
+
+    nav li {
+      float: left;
+      padding-right: 35px;
+    }
+
+    .nav-left {
+      float: left;
+    }
+
+  .nav-right {
+    float: right;
+    }
+
+  .fa-search {
+    color: #00a4bd;
+  }
+
+  #nav-fixed {
+    background-color: #f5f8fa;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 1px solid #33475b;
+  }
+
+  #main-nav {
+    margin-top: 80px;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  #main-nav img {
+    padding-top: 25px;
+  }
+
+  /* CSS JUMBO */
+  .jumbo {
+
+    position: relative;
+    height: 700px;
+    background-image: url("../img/jumbotron.png");
+    background-color: #fff1ee;
+    background-position: 100% 248%;
+    background-repeat: no-repeat;
+    background-size: 70%;
+    color: #33475b;
+  }
+  .jumbo-content {
+    width: 35%;
+    padding-top: 60px;
+  }
+  .jumbo-content h1 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .jumbo-content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+  }
+  .jumbo-content .button {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 0;
+    line-height: 29px;
+    text-decoration: none;
+    padding: 21px 34px;
+  }
+  .green-line{
+    background-color: #afebe4;
+    height: 80px;
+    border-top: solid 3px #33475b;
+    border-bottom: solid 3px #33475b;
+  }
+/* CSS MAIN */
+
+  /* CSS CARD SECTION */
+  #cards-section {
+    background-color: #f4f9fd;
+    color: #33475b;
+  }
+  .subsection-cube {
+    text-align: center;
+    padding-top: 30px;
+  }
+
+  #cubo {
+    width: 25%;
+  }
+
+  .subsection-crm {
+    padding: 10px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2), -2px -2px 4px rgba(0,0,0,0.2) ;
+    border-radius: 5px;
     padding-right: 35px;
   }
 
-  .nav-left {
+  .subsection-3cards {
+    padding-bottom: 30px;
+  }
+
+  .card-container {
+    padding: 10% 15%;
+  }
+
+  .subsection-3cards .card-container {
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.2), -2px -2px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .card-container img{
+    margin-bottom: 15px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .card-container .button{
+    display: block;
+    width: 150px;
+    margin: 0 auto;
+  }
+  .card-container p, .column70 p{
+    border-bottom: 1px solid #33475b;
+  }
+
+  .card-container ul, .column70 ul {
+    padding-bottom: 20px;
+    list-style-image: url("../img/pallino-arancio.png");
+    list-style-position: inside;
+    text-align: justify;
+  }
+  .column70 li{
     float: left;
+    padding-right: 20px;
 
   }
 
-.nav-right {
-  float: right;
+  /* CSS NUMBERS */
+  #numbers-section {
+    background: rgb(0,167,186);
+    background: linear-gradient(45deg, rgba(0,167,186,1) 35%, rgba(0,188,166,1) 100%);
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  #numbers-section h2 {
+    font-size: 32px;
   }
 
+  .clm25-wrapper{
+  padding: 30px;
+  }
+  .subsection-numbers-grid p{
+    padding-bottom: 0;
+  }
+  .numbers-row:first-of-type {
+    border-bottom: solid 1px #fff;
+  }
+  .brd-white-right {
+    border-right: solid 1px #fff;
+  }
 
-.fa-search {
-  color: #00a4bd;
-}
+  /* CSS CUSTOMER SECTION */
+  #customers-section{
+    color:  #33475b;
+  }
 
-#nav-fixed {
-  background-color: #f5f8fa;
-  position: fixed;
-  top: 0;
-  z-index: 99;
-  font-size: 16px;
-  font-weight: 500;
-  border-bottom: 1px solid #33475b;
-}
+  #customers-section p {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
 
-#main-nav {
-  margin-top: 80px;
-  font-size: 18px;
-  font-weight: 600;
-}
+  #customers-section .button {
+    display: inline-block;
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 0;
+    padding: 21px 34px;
+    margin-bottom: 30px;
+  }
 
-#main-nav img {
-  padding-top: 25px;
-}
+  #customer-grid .clm25-wrapper {
+    padding: 20px;
+  }
 
-/* CSS JUMBO */
-.jumbo {
+  #customer-grid img{
+    width: 110px;
+    vertical-align: middle;
+  }
 
-  position: relative;
-  height: 700px;
-  background-image: url("../img/jumbotron.png");
-  background-position: bottom right;
-  background-repeat: no-repeat;
-  background-size: 100%;
-  color: #33475b;
-}
-.jumbo-content {
-  width: 35%;
-  padding-top: 60px;
-}
-.jumbo-content h1 {
-  font-size: 46px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.jumbo-content p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-
-}
-.jumbo-content .button {
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 600;
-  margin-left: 0;
-  line-height: 29px;
-  text-decoration: none;
-  padding: 21px 34px;
-}
-
-/* CSS MAIN */
-
-/* CSS CARD SECTION */
-#cards-section {
-  background-color: #f4f9fd;
-  color: #33475b;
-}
-.subsection-cube {
-  text-align: center;
-  padding-top: 30px;
-  /* padding-bottom: 50px; */
-}
-#cubo {
-  width: 25%;
-}
-
-.subsection-crm {
-  margin-bottom: 30px;
-  background-color: #fff;
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-.subsection-3cards {
-  padding-bottom: 30px;
-}
-.card-container {
-  padding: 10% 15%;
-}
-.subsection-3cards .card-container {
-  box-shadow: 2px 2px 3px rgba(0,0,0,0.2);
-  border-radius: 5px;
-}
-
-
-.card-container img{
-  margin-bottom: 15px;
-  width: 150px;
-  height: 150px;
-}
-.card-container .button{
-  display: block;
-  width: 150px;
-  margin: 0 auto;
-}
-.card-container p, .column70 p{
-  border-bottom: 1px solid #33475b;
-}
-
-.card-container ul, .column70 ul {
-  padding-bottom: 20px;
-  list-style-image: url("../img/pallino-arancio.png");
-  list-style-position: inside;
-  text-align: justify;
-}
-.column70 li{
-  float: left;
-  padding-right: 20px;
-
-}
-
-
-
-
-/* CSS NUMBERS */
-#numbers-section {
-  background: rgb(0,167,186);
-  background: linear-gradient(45deg, rgba(0,167,186,1) 35%, rgba(0,188,166,1) 100%);
-  color: white;
-  text-align: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
-}
-
-.clm25-wrapper{
-padding: 30px;
-}
-.subsection-numbers-grid p{
-  padding-bottom: 0;
-}
-.brd-white-bottom {
-  border-bottom: solid 1px #fff;
-}
-.brd-white-right {
-  border-right: solid 1px #fff;
-}
-
-
-/* CSS CUSTOMER SECTION */
-#customers-section{
-  color:  #33475b;
-}
-
-
-#customers-section p {
-  margin-top: 10px;
-  margin-bottom: 20px;
-
-}
-
-#customers-section .button {
-  display: inline-block;
-  font-size: 17px;
-  font-weight: 600;
-  margin-left: 0;
-  padding: 21px 34px;
-  margin-bottom: 30px;
-}
-#customer-grid img{
-  width: 110px;
-
-}
-
-
-#woman {
-  width: 50%;
-  padding-bottom: 20px;
-}
+  #woman {
+    width: 50%;
+    padding-bottom: 20px;
+  }
 
 /* CSS FOOTER */
 
 footer {
   background-color: #32495b;
-  /* height:600px; */
   color: #fff;
   font-weight: bold;
 }
+
 footer ul {
 list-style-type: none;
 }
+
 footer li {
   padding-bottom: 20px;
 }
@@ -367,16 +379,17 @@ footer a:hover{
   margin-left: 0;
   background-color: #dadee0;
   color: #32495b;
-  /* margin-top: 30px; */
 }
+
 #support:hover{
   background-color: #7FA9DE;
 }
+
 #columns-footer {
   padding-top: 30px;
 }
-#languages-footer {
 
+#languages-footer {
   text-align: center;
   border-bottom: 1px solid #dadee0;
 }
@@ -386,12 +399,12 @@ footer a:hover{
   padding-right: 30px;
   font-size: 120%;
   padding-top: 20px;
-  padding-bottom: 20px;
 }
 
 #credits-footer img {
   padding-top: 20px;
 }
+
 #credits-footer {
   padding-bottom: 50px;
 }
