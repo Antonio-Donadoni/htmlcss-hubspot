@@ -191,9 +191,10 @@ transition: all 0.5s;
     height: 700px;
     background-image: url("../img/jumbotron.png");
     background-color: #fff1ee;
-    background-position: 100% 248%;
+    background-size: 90%;
+    background-position: 100% 25%;
     background-repeat: no-repeat;
-    background-size: 70%;
+    ;
     color: #33475b;
   }
   .jumbo-content {
