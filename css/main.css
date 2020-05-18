@@ -190,7 +190,7 @@ transition: all 0.5s;
     position: relative;
     height: 700px;
     background-image: url("../img/jumbotron.png");
-    background-color: #fff1ee;
+    background-color: #fff6ef;
     background-size: 90%;
     background-position: 100% 25%;
     background-repeat: no-repeat;
@@ -339,6 +339,8 @@ transition: all 0.5s;
 
   #customer-grid .clm25-wrapper {
     padding: 20px;
+    line-height: 80px;
+    height: 80px;
   }
 
   #customer-grid img{
